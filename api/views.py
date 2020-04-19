@@ -11,7 +11,7 @@ def index(request):
 
 
 def who_am_i(request):
-    ipaddress = request.META.get('HTTP_HOST')
+    ipaddress = request.META.get('REMOTE_ADDR')
     language = request.META.get('HTTP_ACCEPT_LANGUAGE')
     user_agent = request.META.get('HTTP_USER_AGENT')
     return JsonResponse({
