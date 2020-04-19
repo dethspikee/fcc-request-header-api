@@ -1,1 +1,1 @@
-web: gunicorn timestamp_micro.wsgi:application --preload
+web: gunicorn headers.wsgi:application --preload
